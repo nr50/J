@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  // url      = env("DATABASE_URL")   // ← ये लाइन हटा दो या comment कर दो (Prisma 7 में नहीं चाहिए)
+  url      = env("DATABASE_URL")  // ← ये लाइन वापस add करो (Prisma 5 में mandatory है)
 }
 
 model User {
